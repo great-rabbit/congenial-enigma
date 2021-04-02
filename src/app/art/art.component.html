@@ -1,0 +1,5 @@
+<mat-grid-list cols="2" rowHeight="275px">
+	<mat-grid-tile *ngFor="let card of cards" [colspan]="card.cols" [rowspan]="card.rows">
+		<img class="responsive" [attr.src]="card.src">
+	</mat-grid-tile>
+</mat-grid-list>
